@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#000000" />
+  <title>CLOUD CENTER QR CODE SCANNER</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="llqrcode.js"></script>
+  <script type="text/javascript" src="cloudcenter_webqr.js?v1"></script>
+</head>
+<body>
+  <div class="cloudcenter">
+    <div class="title">Cloud Center</div>
+  </div>
+  <center>
+    <div id="main">
+      <div id="mainbody">
+        <div class="camera" id="outdiv"></div>
+        <div class="button">
+          <div class="row">
+            <button class="btn" id="reload" onclick="location.reload();">Reload Kamera</button>
+          </div>
+          <div class="row">
+            <button class="btn" onclick="buka();">Buka di Chrome</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="credit">
+      <a id="creditme" href="https://cloudcenter-cc.blogspot.com">Cloud Center QR</a>
+      <br>
+      Powered by <a href="http://www.webqr.com">webqr.com</a>
+    </div>
+  </center>
+  <canvas style="display:none;" id="qr-canvas" width="800" height="600"></canvas>
+  <script src="jquery.min.js"></script>
+  <script type="text/javascript">load();</script>
+<script>
+var elem = document.getElementById('powered');elem.parentNode.removeChild(elem);
+  function buka(){
+      window.location='intent://laksa19.github.io/myqr#Intent;scheme=http;package=com.android.chrome;end';
+  }
+  //<![CDATA[
+$(document).ready(function () { if ($("#creditme,.creditme").attr("href") != "https://cloudcenter-cc.blogspot.com") {
+        window.location.href = "https://cloudcenter-cc.blogspot.com"; }});
+//]]>
+</script>
+</body>
+</html>
+
