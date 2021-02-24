@@ -79,7 +79,11 @@ body {
 }
 
 .credit {
+    width: 100%;
+    color: #fff;
     margin-top: 0px;
+    position: fixed;
+    bottom: 0;
 }
 
 .credit a {
